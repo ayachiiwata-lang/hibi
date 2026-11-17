@@ -1241,7 +1241,7 @@ function renderSettings() {
     <div class="section-label">バックアップ</div>
     <div class="group">
       <button class="group-row" data-act="export"><span class="gi accent">${I.share}</span><span class="grow">バックアップを保存<small>最終：${last}</small></span>${I.right}</button>
-      <button class="group-row" data-act="import"><span class="gi">${I.download}</span><span class="grow">バックアップから読み込む<small>旧アプリ「日々」のファイルもOK</small></span>${I.right}</button>
+      <button class="group-row" data-act="import"><span class="gi">${I.download}</span><span class="grow">バックアップから読み込む<small>「ファイルを選択」→ ドライブからも選べます</small></span>${I.right}</button>
     </div>
     <p class="foot-note">データはこの端末の中だけに保存されます。機種変更やSafariのデータ削除に備えて、「ファイル」アプリやGoogleドライブにバックアップしてください。</p>
     <div class="group">
