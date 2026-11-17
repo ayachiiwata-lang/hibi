@@ -1266,7 +1266,9 @@ function renderSettings() {
 async function exportData() {
   const payload = { app: 'hibi-diary', version: 10, exportedAt: nowISO(), ...db };
   const json = JSON.stringify(payload, null, 2);
-  const name = `日々-${ymd()}.json`;
+  // 名前は固定。同じ場所に保存すると「置き換えますか？」と聞かれ、上書きできる。
+  // 書き出した日時は中身の exportedAt に入っている
+  const name = '日々-backup.json';
   const file = new File([json], name, { type: 'application/json' });
   try {
     if (navigator.canShare?.({ files: [file] })) {
