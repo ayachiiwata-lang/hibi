@@ -1354,7 +1354,7 @@ $('#fileInput').addEventListener('change', async (ev) => {
     data = JSON.parse(await f.text());
     normalize(data);
   } catch (_) {
-    toast('読み込めないファイルです');
+    toast('日々のバックアップではないようです');
     return;
   }
   const empty = !db.entries.length && !db.highlights.length && !db.works.length;

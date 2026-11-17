@@ -1,5 +1,5 @@
 // オフライン用キャッシュ。ファイルを更新したら VERSION を上げる
-const VERSION = 'hibi-v4';
+const VERSION = 'hibi-v5';
 const FILES = ['./', 'index.html', 'style.css', 'app.js', 'manifest.webmanifest', 'icon.svg', 'icon-180.png', 'icon-192.png', 'icon-512.png'];
 
 self.addEventListener('install', (e) => {

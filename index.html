@@ -52,7 +52,9 @@
 
 <dialog id="sheet"><form method="dialog" id="sheetForm"></form></dialog>
 <div id="toast" role="status" aria-live="polite"></div>
-<input type="file" id="fileInput" accept="application/json,.json" hidden>
+<!-- accept は付けない。付けると iOS で Google ドライブなどのファイルが選べなくなる。
+     中身が正しいかは読み込んだあとに確かめている -->
+<input type="file" id="fileInput" hidden>
 
 <script src="app.js"></script>
 </body>
